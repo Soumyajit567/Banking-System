@@ -11,8 +11,8 @@ jobs:
         image: postgres:latest
         env:
           POSTGRES_DB: transaction_db
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: Soumyajit123#
+          POSTGRES_USER: root
+          POSTGRES_PASSWORD: postgres
         ports:
           - 5432:5432
         options: >-
