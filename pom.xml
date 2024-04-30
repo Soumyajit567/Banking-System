@@ -152,6 +152,8 @@
                     </configuration>
                 </plugin>
 
+            
+
                 <!-- JaCoCo Plugin for code coverage -->
                 <plugin>
                     <groupId>org.jacoco</groupId>
