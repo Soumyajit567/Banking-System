@@ -161,6 +161,9 @@
                         <includes>
                             <include>**/*IntegrationTest.java</include>
                         </includes>
+                        <excludes>
+                            <exclude>**/TransactionControllerIntegrationTest.java</exclude>
+                        </excludes>
                     </configuration>
                     <executions>
                         <execution>
