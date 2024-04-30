@@ -10,9 +10,9 @@ jobs:
       postgres:
         image: postgres:latest
         env:
-          POSTGRES_DB: yourdbname
-          POSTGRES_USER: youruser
-          POSTGRES_PASSWORD: yourpassword
+          POSTGRES_DB: transaction_db  
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: Soumyajit123#  
         ports:
           - 5432:5432
         options: >-
@@ -29,5 +29,6 @@ jobs:
         distribution: oracle
         java-version: 17
     - name: Build and Test
-      run: mvn clean test 
+      run: mvn clean test "-Dspring-boot.run.profiles=github"
+
 

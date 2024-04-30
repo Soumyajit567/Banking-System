@@ -1,15 +1,6 @@
 spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5432/transaction_db
-    username: postgres
-    password: Soumyajit123#
-  jpa:
-    hibernate:
-      ddl-auto: update
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
   logging:
-  level:
-    org.springframework: DEBUG
-    org.hibernate: DEBUG
+    level:
+      org.springframework: DEBUG
+      org.hibernate: DEBUG
+

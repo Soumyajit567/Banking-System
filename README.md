@@ -61,7 +61,7 @@ We are looking for attention in the following areas:
 6. Run the Spring Boot application: 
 
     ```
-    mvn spring-boot:run
+    mvn spring-boot:run "-Dspring-boot.run.profiles=local"
     ```
 
 7. The server will start running on the specified port (default is 8080).
