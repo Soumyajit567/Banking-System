@@ -10,9 +10,9 @@ jobs:
       postgres:
         image: postgres:latest
         env:
-          POSTGRES_DB: transaction_db
-          POSTGRES_USER: root
-          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: yourdbname
+          POSTGRES_USER: youruser
+          POSTGRES_PASSWORD: yourpassword
         ports:
           - 5432:5432
         options: >-
