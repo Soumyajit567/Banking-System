@@ -29,5 +29,5 @@ jobs:
         distribution: oracle
         java-version: 17
     - name: Build and Test
-      run: mvn clean test --no-transfer-progress
+      run: mvn clean test 
 
