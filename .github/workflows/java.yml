@@ -4,22 +4,8 @@ on: push
 
 jobs:
   build:
-    runs-on: ubuntu-latest
 
-    services:
-      postgres:
-        image: postgres:latest
-        env:
-          POSTGRES_DB: transaction_db  
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: Soumyajit123#  
-        ports:
-          - 5432:5432
-        options: >-
-          --health-cmd pg_isready
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3
@@ -29,7 +15,7 @@ jobs:
         distribution: oracle
         java-version: 17
     - name: Build and Test
-      run: mvn clean test "-Dspring-boot.run.profiles=github"
+      run: mvn clean test --no-transfer-progress
 
 
 
